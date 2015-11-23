@@ -1,0 +1,3 @@
+[submodule "static/invoice"]
+	path = static/invoice
+	url = git@github.com:TailoredCloud/AngularJS-Invoice.git

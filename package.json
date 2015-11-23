@@ -1,0 +1,36 @@
+{
+  "name": "tailoredcloud",
+  "version": "1.0.0",
+  "description": "TailoredCloud Software Suite",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js",
+    "preinstall": "node ./scripts.preinstall/index.js",
+    "start": "node ./scripts.start/start.js",
+    "deploy":"git add -A && git commit -m 'autopush' && git push && cp -R index.js node_modules settings.js /var/node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TailoredCloud/tailoredcloud.git"
+  },
+  "keywords": [
+    "tailoredcloud",
+    "webhosting",
+    "git"
+  ],
+  "author": "TJKoury",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TailoredCloud/tailoredcloud/issues"
+  },
+  "homepage": "https://github.com/TailoredCloud/tailoredcloud#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "koa": "^1.1.2",
+    "vhost": "^3.0.2"
+  },
+  "devDependencies": {
+    "node-inspector": "^0.12.3",
+    "nodemon": "^1.8.1"
+  }
+}
