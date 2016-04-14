@@ -1,15 +1,18 @@
 module.exports = {
-
-  dir:{
-    development:'/opt/software/tailoredcloud',
-    production:'/var/node/'
+  "servercertificate": {
+    "certificate": "certificates/cert.pem"
   },
+  dir:{
+    dev:'/opt/software/tailoredcloud',
+    prod:'/var/node/'
+  },
+  environment:"dev",
   ports:{
-    development:{
+    dev:{
       http:8081,
       https:8444,
     },
-    production:{
+    prod:{
       http:8080,
       https:8443,
     },

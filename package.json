@@ -7,7 +7,7 @@
     "test": "test.js",
     "preinstall": "node ./scripts.preinstall/index.js",
     "start": "node ./scripts.start/start.js",
-    "deploy":"git add -A && git commit -m 'autopush' && git push && cp -R index.js node_modules settings.js /var/node"
+    "deploy": "git add -A && git commit -m 'autopush' && git push && cp -R index.js node_modules settings.js /var/node"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,8 @@
   "dependencies": {
     "express": "^4.13.3",
     "koa": "^1.1.2",
+    "minimist": "^1.2.0",
+    "pem": "^1.8.1",
     "vhost": "^3.0.2"
   },
   "devDependencies": {
