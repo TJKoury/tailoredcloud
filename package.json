@@ -26,6 +26,7 @@
   "homepage": "https://github.com/TailoredCloud/tailoredcloud#readme",
   "dependencies": {
     "express": "^4.13.3",
+    "firebase-token-generator": "^2.0.0",
     "koa": "^1.1.2",
     "minimist": "^1.2.0",
     "pem": "^1.8.1",

@@ -32,7 +32,7 @@
 
 
    app.use("/", function(req, res, next){
-        res.end('NO DEB');
+        res.end('NO DOMAIN');
     })
 
     console.log(ports.http);
